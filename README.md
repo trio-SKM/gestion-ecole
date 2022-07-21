@@ -27,6 +27,27 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installing Project
+After Cloning this repository to your host
+in directory
+<pre><code>composer update</code></pre>
+Or
+<pre><code>composer install</code></pre>
+Edit your database informations in .env file
+Copy .env file and generate it
+<pre><code>copy .env.exemple .env</code></pre>
+<pre><code>php artisan key:generate</code></pre>
+
+Clean up configuration and cache files
+<pre><code>php artisan config:clear</code></pre>
+<pre><code>php artisan cache:clear</code></pre>
+
+Create all tables in your localhost
+<pre><code>php artisan migrate</code></pre>
+
+Link the storage file to the public file
+<pre><code>php artisan storage:link</code></pre>
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
